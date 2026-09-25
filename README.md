@@ -137,6 +137,8 @@ NEXTAUTH_URL="http://localhost:3000"
 ```
 Never commit your real environment files to GitHub.
 
+---
+
 ## 🗄️ Database Setup
 
 After configuring the Supabase PostgreSQL connection, run:
@@ -147,6 +149,9 @@ Then generate the Prisma client:
 ```bash
 npx prisma generate
 ```
+
+---
+
 ## ▶️ Run the Application
 
 Start the development server:
@@ -157,12 +162,16 @@ Open the application in your browser:
 
 http://localhost:3000
 
+---
+
 ## 📄 Resume Requirements
 
 The application currently accepts:
 
 PDF files only
 Maximum file size: 5 MB
+
+---
 
 ## 🤖 AI Analysis
 
@@ -177,6 +186,8 @@ Overall resume score
 - ATS feedback
 
 The AI response is returned as structured JSON and stored in the database.
+
+---
 
 ## 🗃️ Database Models
 
@@ -212,12 +223,12 @@ Stores:
 
 The following environment variables are required:
 
-Variable	Purpose
-DATABASE_URL	Supabase PostgreSQL transaction pooler
-DIRECT_URL	Supabase PostgreSQL session connection
-GROQ_API_KEY	Groq API authentication
-NEXTAUTH_SECRET	NextAuth secret
-NEXTAUTH_URL	Application URL
+- Variable- Purpose
+- DATABASE_URL- Supabase PostgreSQL transaction pooler
+- DIRECT_URL- Supabase PostgreSQL session connection
+- GROQ_API_KEY- Groq API authentication
+- NEXTAUTH_SECRET- NextAuth secret
+- NEXTAUTH_URL- Application URL
 
 See .env.example for the required format.
 
@@ -231,7 +242,9 @@ If the build succeeds, start the production server with:
 ```bash
 npm start
 ```
-### 📌 Project Purpose
+---
+
+## 📌 Project Purpose
 
 The AI Resume Roaster project demonstrates how generative AI can be integrated into a full-stack web application to analyze resumes and provide structured, actionable feedback.
 
@@ -244,6 +257,8 @@ The project combines:
 - Database management
 - ORM-based data persistence
 - AI-generated resume analysis
+
+---
 
 ## 🔄 Application Flow
 
@@ -262,6 +277,8 @@ Store Resume + Analysis
 Display Results
       ↓
 View Dedicated Feedback Page
+
+---
 
 ## 👩‍💻 Author
 
