@@ -108,16 +108,16 @@ Analysis is stored using Prisma
 Data is saved in Supabase PostgreSQL
        ↓
 Feedback is displayed to the user
-
+```
 ---
 
 ## 🚀 Getting Started
 
 1. Clone the Repository
-
-`git clone <your-github-repository-url>
-cd ai-resume-roaster`
-
+```bash
+git clone <your-github-repository-url>
+cd ai-resume-roaster
+```
 2. Install Dependencies
 ```bash
 npm install
@@ -125,16 +125,16 @@ npm install
 Create a .env file in the project root.
 
 Add:
-
+```bash
 DATABASE_URL="your_supabase_transaction_pooler_url"
 DIRECT_URL="your_supabase_session_pooler_url"
-
+```
 Create a .env.local file and add:
-
+```bash
 GROQ_API_KEY="your_groq_api_key"
 NEXTAUTH_SECRET="your_nextauth_secret"
 NEXTAUTH_URL="http://localhost:3000"
-
+```
 Never commit your real environment files to GitHub.
 
 ## 🗄️ Database Setup
